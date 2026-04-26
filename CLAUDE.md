@@ -1,3 +1,5 @@
+Making **tool calls** if you have unfinished task!
+
 # AI Code
 
 The project is an Rust version of `claude code`: ~/claudecode/openclaudecode

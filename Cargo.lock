@@ -28,7 +28,7 @@ dependencies = [
 
 [[package]]
 name = "ai"
-version = "0.23.3"
+version = "0.29.2"
 dependencies = [
  "ai-agent",
  "anyhow",
@@ -63,6 +63,7 @@ dependencies = [
  "sha1",
  "sha2",
  "tempfile",
+ "textwrap",
  "thiserror 1.0.69",
  "tokio",
  "tokio-tungstenite",
@@ -77,7 +78,7 @@ dependencies = [
 
 [[package]]
 name = "ai-agent"
-version = "0.50.0"
+version = "0.68.0"
 dependencies = [
  "anyhow",
  "atty",
@@ -94,6 +95,7 @@ dependencies = [
  "log",
  "lru",
  "once_cell",
+ "parking_lot",
  "rand 0.8.5",
  "regex",
  "reqwest 0.12.28",
@@ -3076,6 +3078,8 @@ source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "c13547615a44dc9c452a8a534638acdf07120d4b6847c8178705da06306a3057"
 dependencies = [
  "smawk",
+ "unicode-linebreak",
+ "unicode-width 0.2.2",
 ]
 
 [[package]]
@@ -3459,6 +3463,12 @@ name = "unicode-ident"
 version = "1.0.24"
 source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "e6e4313cd5fcd3dad5cafa179702e2b244f760991f45397d14d4ebf38247da75"
+
+[[package]]
+name = "unicode-linebreak"
+version = "0.1.5"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "3b09c83c3c29d37506a3e260c08c03743a6bb66a9cd432c6934ab501a190571f"
 
 [[package]]
 name = "unicode-normalization"
